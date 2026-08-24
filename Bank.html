@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          user-scalable=no">
+
+    <title>SCUB- Dashboard</title>
+
+    <link rel="stylesheet" href="Bank.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <header class="top-bar">
+
+        <div>
+
+            <p class="small-text">
+                Welcome back
+            </p>
+
+            <h2>
+                Greg 👋
+            </h2>
+
+        </div>
+
+        <div class="profile">
+            G
+        </div>
+
+    </header>
+
+
+    <main class="app-content">
+
+
+        <section class="balance-card">
+
+            <div class="balance-header">
+
+                <span>
+                    Available Balance
+                </span>
+
+                <button
+                    id="eyeButton"
+                    type="button">
+                    👁
+                </button>
+
+            </div>
+
+            <h1 id="balance">
+                 $1,952,636.75
+            </h1>
+
+            <p>
+                Account •••• 7890
+            </p>
+
+        </section>
+
+        <section class="quick-actions">
+
+            <div class="action">
+
+                <div class="action-icon">
+                    ↗
+                </div>
+
+                <span>
+                    Transfer
+                </span>
+
+            </div>
+
+
+            <div class="action">
+
+                <div class="action-icon">
+                    ＋
+                </div>
+
+                <span>
+                    Deposit
+                </span>
+
+            </div>
+
+
+            <div class="action">
+
+                <div class="action-icon">
+                    ↙
+                </div>
+
+                <span>
+                    Withdraw
+                </span>
+
+            </div>
+
+
+            <div class="action">
+
+                <div class="action-icon">
+                    ⋮
+                </div>
+
+                <span>
+                    More
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <section class="transactions">
+
+            <div class="section-title">
+
+                <h2>
+                    Recent Transactions
+                </h2>
+
+                <button type="button">
+                    See all
+                </button>
+
+            </div>
+
+            <div class="transaction">
+
+                <div class="transaction-left">
+
+                    <div class="transaction-icon income">
+                        ↓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Check
+                        </strong>
+
+                        <p>
+                            Today • 10:30 AM
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <span class="credit">
+                    +$150,000
+                </span>
+
+            </div>
+
+
+            <div class="transaction">
+
+                <div class="transaction-left">
+
+                    <div class="transaction-icon expense">
+                        ↑
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Electricity Bill
+                        </strong>
+
+                        <p>
+                            Yesterday
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <span class="debit">
+                    -$15,000
+                </span>
+
+            </div>
+
+
+            <div class="transaction">
+
+                <div class="transaction-left">
+
+                    <div class="transaction-icon income">
+                        ↓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Transfer Received
+                        </strong>
+
+                        <p>
+                            20 Aug 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <span class="credit">
+                    +$50,000
+                </span>
+
+            </div>
+
+
+            <div class="transaction">
+
+                <div class="transaction-left">
+
+                    <div class="transaction-icon expense">
+                        ↑
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Groceries
+                        </strong>
+
+                        <p>
+                            19 Aug 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <span class="debit">
+                    -$8,500
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <nav class="bottom-nav">
+
+        <div class="nav-item active">
+
+            <span>
+                ⌂
+            </span>
+
+            <p>
+                Home
+            </p>
+
+        </div>
+
+
+        <div class="nav-item">
+
+            <span>
+                ↔
+            </span>
+
+            <p>
+                Transfer
+            </p>
+
+        </div>
+
+
+        <div class="nav-item">
+
+            <span>
+                ▣
+            </span>
+
+            <p>
+                Cards
+            </p>
+
+        </div>
+
+
+        <div class="nav-item">
+
+            <span>
+                ⚙
+            </span>
+
+            <p>
+                Settings
+            </p>
+
+        </div>
+
+
+        <div
+            class="nav-item"
+            id="logoutBtn">
+
+            <span>
+                ↪
+            </span>
+
+            <p>
+                Logout
+            </p>
+
+        </div>
+
+    </nav>
+
+
+    <script src="Bank.js"></script>
+
+</body>
+
+</html>
