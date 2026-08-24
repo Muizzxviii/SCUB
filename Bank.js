@@ -25,7 +25,7 @@ if (loginForm) {
                 "true"
             );
 
-            window.location.href = "Bank.html";
+            window.location.href = "login.html";
 
         } else {
 
