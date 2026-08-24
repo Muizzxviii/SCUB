@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          user-scalable=no">
+
+    <title>SCUB- Login</title>
+
+    <link rel="stylesheet" href="Bank.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-screen">
+
+        <div class="logo">
+            SCUB
+        </div>
+
+        <h1>Stamford Credit Union Bank</h1>
+
+        <p class="welcome-text">
+            Welcome back
+        </p>
+
+        <form id="loginForm">
+
+            <div class="input-box">
+
+                <label for="accountNumber">
+                    Account Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="accountNumber"
+                    maxlength="10"
+                    placeholder="Enter account number"
+                    required
+                >
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    required
+                >
+
+            </div>
+
+
+            <p id="errorMessage"></p>
+
+
+            <button
+                type="submit"
+                class="login-btn">
+
+                Login
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <script src="Bank.js"></script>
+
+</body>
+
+</html>
