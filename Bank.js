@@ -38,6 +38,7 @@ if (loginForm) {
 
 }
 
+document.querySelector('.profile').innerText = "M"
 
 const balance = document.getElementById("balance");
 const eyeButton = document.getElementById("eyeButton");
