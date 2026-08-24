@@ -25,7 +25,7 @@ if (loginForm) {
                 "true"
             );
 
-            window.location.href = "dashboard.html";
+            window.location.href = "Dashboard.html";
 
         } else {
 
