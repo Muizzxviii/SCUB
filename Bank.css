@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.login-screen {
+    width: 100%;
+    max-width: 430px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: #123c8c;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    margin: 0 auto 20px;
+}
+
+.login-screen h1 {
+    text-align: center;
+    font-size: 27px;
+}
+
+.welcome-text {
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 7px;
+    margin-bottom: 35px;
+}
+
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 52px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background: white;
+}
+
+.input-box input:focus {
+    border-color: #123c8c;
+}
+
+
+.login-btn {
+    width: 100%;
+    height: 53px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #123c8c;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+}
+
+
+
+#errorMessage {
+    color: #e63946;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+}
+
+
+
+.demo-box {
+    background: #eaf1ff;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    margin-top: 25px;
+
+    font-size: 13px;
+}
+
+.demo-box p {
+    margin-top: 5px;
+}
+
+.demo-text {
+    text-align: center;
+
+    color: #999;
+
+    font-size: 11px;
+
+    margin-top: 20px;
+}
+
+
+.dashboard-page {
+    min-height: 100vh;
+
+    padding-bottom: 80px;
+}
+
+
+
+.top-bar {
+    background: white;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.small-text {
+    color: #888;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+}
+
+.top-bar h2 {
+    font-size: 20px;
+}
+
+.profile {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 50%;
+
+    background: #123c8c;
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+
+.app-content {
+    padding: 20px;
+}
+
+
+/* BALANCE CARD */
+
+.balance-card {
+    background: #123c8c;
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(18, 60, 140, 0.2);
+}
+
+.balance-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 14px;
+
+    opacity: 0.85;
+}
+
+.balance-header button {
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.balance-card h1 {
+    font-size: 32px;
+
+    margin: 15px 0 10px;
+}
+
+.balance-card p {
+    font-size: 13px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions {
+    background: white;
+
+    border-radius: 18px;
+
+    margin-top: 18px;
+
+    padding: 18px 10px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.04);
+}
+
+.action {
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.action-icon {
+    width: 45px;
+    height: 45px;
+
+    margin: auto;
+
+    margin-bottom: 8px;
+
+    border-radius: 50%;
+
+    background: #edf3ff;
+
+    color: #123c8c;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 21px;
+}
+
+
+/* =========================
+   TRANSACTIONS
+========================= */
+
+.transactions {
+    margin-top: 25px;
+}
+
+.section-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 18px;
+}
+
+.section-title button {
+    border: none;
+
+    background: none;
+
+    color: #123c8c;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.transaction {
+    background: white;
+
+    padding: 16px 12px;
+
+    border-bottom:
+        1px solid #eee;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.transaction:first-of-type {
+    border-radius:
+        15px 15px 0 0;
+}
+
+.transaction:last-child {
+    border-radius:
+        0 0 15px 15px;
+}
+
+
+.transaction-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.transaction-left strong {
+    font-size: 14px;
+}
+
+.transaction-left p {
+    color: #999;
+
+    font-size: 11px;
+
+    margin-top: 5px;
+}
+
+
+/* TRANSACTION ICONS */
+
+.transaction-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.income {
+    background: #e5f8ed;
+
+    color: #159447;
+}
+
+.expense {
+    background: #ffe9e9;
+
+    color: #e63946;
+}
+
+
+/* AMOUNTS */
+
+.credit {
+    color: #159447;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.debit {
+    color: #e63946;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+    position: fixed;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 68px;
+
+    background: white;
+
+    display: flex;
+
+    justify-content:
+        space-around;
+
+    align-items: center;
+
+    border-top:
+        1px solid #eee;
+
+    z-index: 100;
+}
+
+.nav-item {
+    text-align: center;
+
+    color: #999;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+.nav-item span {
+    display: block;
+
+    font-size: 20px;
+
+    margin-bottom: 3px;
+}
+
+.nav-item p {
+    font-size: 10px;
+}
+
+.nav-item.active {
+    color: #123c8c;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   TABLET / LARGE SCREEN
+========================= */
+
+@media (min-width: 600px) {
+
+    .login-screen {
+        padding: 30px;
+
+        background: white;
+
+        border-radius: 20px;
+
+        box-shadow:
+            0 10px 40px
+            rgba(0, 0, 0, 0.08);
+    }
+
+    .app-content {
+        max-width: 600px;
+
+        margin: auto;
+    }
+
+}
